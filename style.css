@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+  margin: 100;
+  font-family: "Public Sans", sans-serif;
+  font-weight: bold;
+  background-color: #191a2f;
+  color: #f2d545;
+}
+
+/* Section 1 Styling */
+.section-1 {
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+/* Section 2 Styling */
+.section-2 {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  animation: fade-in 9s forwards;
+}
+
+/* Main Section Styling */
+.main-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  animation: fade-in 16s forwards;
+}
+
+/* Button Styling */
+.generate-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #80ffdf, #1df798);
+  color: #1f1f1f;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover Text Effect */
+.generate-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f2d545;
+  color: #1a1c1e;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  animation: fade-in 8s forwards
+}
+
+/* Fade-in Animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
