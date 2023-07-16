@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>The Co-Pilot of Kindness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script>
+  const sections = document.querySelectorAll(".section-1, .section-2, .main-section, .footer");
+
+  const fadeInOnScroll = () => {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight) {
+        section.classList.add("fade-in");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", fadeInOnScroll);
+</script>
+  <div class="section-1">
+    <h1><span class="wave">👋</span> The Co-Pilot of Kindness</h1>
+    <p class="supporting-text">Generating random acts of kindness</p>
+    <div class="fluid-shape"></div>
+    <p class="scroll-text">Keep scrolling to explore more <span class="arrow">⬇️</span></p>
+  </div>
+  
+  <div class="section-2">
+    <h2><span class="smiley">😊</span> It takes just one act of kindness to make a person's day.</h2>
+    <p class="yearly-impact">An act of kindness every day for a year positively impacts 365 people.</p>
+    <div class="underline-effect"></div>
+    <p class="scroll-text">Scroll to get started! <span class="arrow">⬇️</span></p>
+  </div>
+  
+  <div class="main-section">
+    <button class="generate-button">Generate an act of kindness!</button>
+    <p class="supporting-text">Happy kinding! (I don't think that's a word lol)</p>
+  </div>
+  
+  <div class="footer">
+    <a href="https://github.com/Jusmanov" target="_blank">
+      <img style="display:inline-block;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub Icon" width="24" height="24">
+    </a>
+    <p class="copyright">Copyright 2023 John Usmanov</p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
